@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Om Shree Sadguru Kitchen</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<body>
+    <nav>
+        <div class="log">
+            <img class="log" src="logo1.png" onclick="window.location.href = 'main.html'">
+        </div>
+        <ul>
+            <li><p class="contact" onclick="$('#contactmain').fadeIn('slow');">Contact</p></li>
+
+        </ul>
+    </nav>
+    <div id="contactmain" class="contactmain">
+        <img src="cancel.png" class="closebtn" onclick="$('#contactmain').fadeOut('slow');">
+        <div class="contactmaindetail">
+        <h3>Contact</h3>
+        <p>Nitin Kamble</p>
+        <p>Mobile No. +91-9881493032 / 7276003032</p>
+        <p>Email : omshreesadguru8@gmail.com</p>
+        </div>
+        <a class="ahrefs" href="https://wa.me/919881493032" target="_blank">
+            <img class="whatsus" src="WhatsApp us.png">
+        </a>
+    </div>
+    <div class="row">
+        <div id="clm1" class="column">
+
+        </div>
+        <div id="clm2"  class="column">
+
+        </div>
+        <div id="clm3" class="column">
+
+        </div>
+        <div id="clm4" class="column">
+
+        </div>
+      </div>
+</body>
+<script>
+    var a = 0;
+    for(i=1;i<102;i++){
+        if(a<4){a++}else{a=1};
+        var div = document.getElementById("clm"+a);
+        console.log
+        div.insertAdjacentHTML('beforeend','<img src="Images/image ('+i+').jpg">')
+    }
+</script>
